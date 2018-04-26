@@ -1,0 +1,77 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+body{background:grey url('./img/dark.jpg') no-repeat center center;
+    background-size:cover;
+     
+}
+.align{
+    margin-bottom:10px;
+}
+.keys{   
+       margin:5px;
+       font-family:Helvetica;
+       font-size:25px;
+       display:inline-flex;
+       width:60px;
+       height:60px;
+       background: linear-gradient(to bottom, #ffffff 0%,#f2f2f2 100%);  
+       color:rgb(77,77,77);   
+       border:1px solid rgb(254,254,254);
+       border-radius:5px;
+       box-shadow: 0px 3px 0px 0px rgba(151,151,151,1),
+       0px -1px 0px 1px rgba(191,191,191,1),  0px 5px 0px 3px rgba(0,0,0,1);  
+       text-transform:uppercase;/*使小写字母大写*/  
+       position:relative;
+}
+
+/*我直接将kbd当成div了，所以进行偏移就是偏移的所有kbd的偏移*/
+kbd>button{
+    display: none;
+    position:absolute;
+    right:0px;
+    bottom:0px;
+
+}
+kbd:hover > button{
+    display: inline-block;
+}
+.wrapper>div:nth-child(2){
+    margin-left:5px;
+}
+.wrapper>div:nth-child(3){
+    margin-left:-60px;
+}
+main{
+    text-align:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    
+}
+.wrapper{
+    display:inline-block;
+    
+    
+
+}
+button {
+    background: transparent;
+}
+head{
+    position:relative;
+}
+.keys>span{
+    position:absolute;
+    left:4px;
+    top:3px;
+}
+.keys>img{
+    width:20px;
+    height:20px;
+    position:absolute;
+    left:0px;
+    bottom:0px;
+}
